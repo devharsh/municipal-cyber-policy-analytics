@@ -1,0 +1,55 @@
+{
+  "Govern": [
+    "governance",
+    "risk management",
+    "cybersecurity strategy",
+    "board oversight",
+    "security program"
+  ],
+
+  "Identify": [
+    "asset inventory",
+    "risk assessment",
+    "business environment",
+    "critical systems"
+  ],
+
+  "Protect": [
+    "access control",
+    "authentication",
+    "encryption",
+    "training",
+    "firewall"
+  ],
+
+  "Detect": [
+    "monitoring",
+    "intrusion detection",
+    "logging",
+    "security event"
+  ],
+
+  "Respond": [
+    "incident response",
+    "containment",
+    "communication plan",
+    "response team"
+  ],
+
+  "Recover": [
+    "backup",
+    "disaster recovery",
+    "business continuity",
+    "restoration"
+  ],
+
+  "SupplyChain": [
+    "vendor",
+    "third party",
+    "supplier",
+    "contractor",
+    "service provider",
+    "supply chain"
+  ]
+}
+

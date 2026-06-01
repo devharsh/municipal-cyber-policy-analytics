@@ -18,11 +18,13 @@ paper_template/
 Sage-TJ_Poster.pdf
 
 # Root-level script duplicates (canonical versions are in code/)
-ai_classify.py
-compare_methods.py
-policy_analysis.py
-results.py
-keywords.json
+# Leading / anchors these patterns to the repo root only,
+# so code/ai/ai_classify.py and code/manual/*.py are NOT affected.
+/ai_classify.py
+/compare_methods.py
+/policy_analysis.py
+/results.py
+/keywords.json
 
 # Search queries (methodology detail in docs/data-collection.md)
 dorks.csv
