@@ -1,0 +1,38 @@
+# Paper draft and submission files (conference-specific)
+paper.tex
+paper.pdf
+paper.aux
+paper.bbl
+paper.blg
+paper.log
+paper.out
+sample.bib
+preamble.tex
+copyright.tex
+
+# Paper template (conference-specific)
+paper_template.zip
+paper_template/
+
+# Poster PDF
+Sage-TJ_Poster.pdf
+
+# Root-level script duplicates (canonical versions are in code/)
+ai_classify.py
+compare_methods.py
+policy_analysis.py
+results.py
+keywords.json
+
+# Temp extraction directory
+pdf_texts/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python cache
+__pycache__/
+*.py[cod]
+.venv/
+venv/
