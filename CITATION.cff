@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this tool, please cite it as below."
+type: software
+title: "municipal-cyber-policy-analytics: Automated NIST CSF 2.0 Benchmarking for Municipal Cybersecurity Policy"
+abstract: >
+  A reproducible Python pipeline that benchmarks municipal cybersecurity readiness
+  by classifying government policy documents against the six NIST Cybersecurity
+  Framework 2.0 functions (Govern, Identify, Protect, Detect, Respond, Recover)
+  using both keyword-based and AI-assisted classification methods.
+authors:
+  - family-names: "Trivedi"
+    given-names: "Devharsh"
+    affiliation: "Department of Computer Science, Bowie State University"
+    email: "dtrivedi@bowiestate.edu"
+  - family-names: "Despeignes"
+    given-names: "Sage"
+    affiliation: "Department of Computer Science, Bowie State University"
+    email: "despeigness0426@students.bowiestate.edu"
+  - family-names: "Huggins"
+    given-names: "Titorian"
+    affiliation: "Department of Computer Science, Bowie State University"
+    email: "hugginst0604@students.bowiestate.edu"
+repository-code: "https://github.com/devharsh/municipal-cyber-policy-analytics"
+license: MIT
+version: "1.0.0"
+date-released: "2025-01-01"
+keywords:
+  - cybersecurity
+  - NIST CSF 2.0
+  - municipal government
+  - policy analysis
+  - AI classification
+  - supply chain risk
+  - automated benchmarking
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: "Trivedi"
+      given-names: "Devharsh"
+      affiliation: "Bowie State University"
+    - family-names: "Despeignes"
+      given-names: "Sage"
+      affiliation: "Bowie State University"
+    - family-names: "Huggins"
+      given-names: "Titorian"
+      affiliation: "Bowie State University"
+  title: "Benchmarking Municipal Cybersecurity Readiness Through Automated Policy Analytics: Evidence from Maryland Local Governments"
+  collection-title: "Proceedings of the CCSC Eastern Conference 2027"
+  year: 2027
+  publisher:
+    name: "ACM"
+  url: "https://github.com/devharsh/municipal-cyber-policy-analytics"

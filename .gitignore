@@ -24,6 +24,9 @@ policy_analysis.py
 results.py
 keywords.json
 
+# Search queries (methodology detail in docs/data-collection.md)
+dorks.csv
+
 # Temp extraction directory
 pdf_texts/
 
