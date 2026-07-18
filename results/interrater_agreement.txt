@@ -1,0 +1,8 @@
+Second-rater validation, 51 documents, binary label per written decision rule
+both-Yes=7 both-No=40 R1-only-Yes=0 R2-only-Yes=4
+raw agreement=0.9216 (47/51); expected=0.7063; Cohen's kappa=0.7330
+Disagreements (all R2-additional):
+  87bb47f3-ff2c-4353-a25e-d2c103b62a0c.pdf (Data Management Plan)
+  MD_CybersecurityCouncil_Report_2025.pdf (Advisory Report)
+  MD_UMGC_LocalGov_Cybersecurity_2021.pdf (Advisory Report)
+  mpi3-25-compressed.pdf (Workforce Policy)

@@ -6,33 +6,39 @@ Consolidated bibliography for all works cited across this repository. Organized 
 
 ## Core Paper References
 
-**[1]** D. Norris and L. Mateczun, "Cybersecurity Challenges in Local Government," *Government Information Quarterly*, 2023.
+Final bibliography of the camera-ready CCSC Eastern 2026 paper (numbering matches docs/paper.md).
 
-**[2]** CISA (Cybersecurity and Infrastructure Security Agency), "SolarWinds Orion Supply Chain Compromise: Guidance for Affected Organizations," Alert AA20-352A, 2021. https://www.cisa.gov/uscert/ncas/alerts/aa20-352a
+**[1]** M. P. Barrett et al., "Framework for Improving Critical Infrastructure Cybersecurity, Version 1.1," NIST, 2018. https://doi.org/10.6028/NIST.CSWP.04162018
+
+**[2]** CISA, "SolarWinds Orion Supply Chain Compromise: Guidance for Affected Organizations," Alert AA20-352A, 2021. https://www.cisa.gov/uscert/ncas/alerts/aa20-352a
 
 **[3]** CISA, "MOVEit Transfer and MOVEit Cloud Vulnerabilities," Advisory AA23-158A, 2023. https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-158a
 
-**[4]** Executive Office of the President, "Executive Order 14028: Improving the Nation's Cybersecurity," *Federal Register*, vol. 86, p. 26633, May 2021.
+**[4]** Cybersecurity and Infrastructure Security Agency, "Cybersecurity Performance Goals," 2024. https://www.cisa.gov/cross-sector-cybersecurity-performance-goals
 
-**[5]** Cybersecurity and Infrastructure Security Agency (CISA), "Cybersecurity Performance Goals," 2024. https://www.cisa.gov/cross-sector-cybersecurity-performance-goals
+**[5]** S. Despeignes, T. Huggins, and D. Trivedi, "Local Government Supply Chain Cybersecurity: Addressing the Implementation Gap in Resource-Limited Municipalities," *Journal of Computing Sciences in Colleges*, vol. 41, no. 3, pp. 36-37, 2025. https://dl.acm.org/doi/abs/10.5555/3801163.3801176
 
-**[6]** R. Leszczyna, "Review of Cybersecurity Assessment Methods: Applicability Perspective," *Computers and Security*, vol. 108, p. 102376, Jun. 2021. https://doi.org/10.1016/j.cose.2021.102376
+**[6]** Executive Office of the President, "Executive Order 14028: Improving the Nation's Cybersecurity," *Federal Register*, vol. 86, p. 26633, 2021.
 
-**[7]** S. Savas and S. Karatas, "Cyber Governance Studies in Ensuring Cybersecurity," *International Cybersecurity Law Review*, vol. 3, no. 1, pp. 117-133, 2022.
+**[7]** S. T. Hossain, T. Yigitcanlar, K. Nguyen, and Y. Xu, "Local Government Cybersecurity Landscape: A Systematic Review and Conceptual Framework," *Applied Sciences*, vol. 14, no. 13, p. 5501, 2024.
 
-**[8]** S. Despeignes, T. Huggins, and D. Trivedi, "Evaluating the Impact of Cybersecurity Standards on Cyberattack Prevention," in *Proceedings of the ACM CCSC Eastern Conference 2025*, pp. 114-115, 2025. https://dl.acm.org/doi/abs/10.5555/3801163.3801176
+**[8]** R. Leszczyna, "Review of Cybersecurity Assessment Methods: Applicability Perspective," *Computers and Security*, vol. 108, p. 102376, 2021.
 
-**[9]** M. P. Barrett, S. M. Rose, and others, "Framework for Improving Critical Infrastructure Cybersecurity, Version 1.1," NIST Cybersecurity Practice Guide, National Institute of Standards and Technology, Apr. 2018. https://doi.org/10.6028/NIST.CSWP.04162018
+**[9]** National Institute of Standards and Technology, "Cybersecurity Framework 2.0," 2024. https://doi.org/10.6028/NIST.CSWP.29
 
-**[10]** National Institute of Standards and Technology, "Cybersecurity Framework 2.0," NIST Cybersecurity Special White Paper 29, Feb. 2024. https://doi.org/10.6028/NIST.CSWP.29
+**[10]** D. F. Norris, L. Mateczun, A. Joshi, and T. Finin, "Managing Cybersecurity at the Grassroots: Evidence from the First Nationwide Survey of Local Government Cybersecurity," *Journal of Urban Affairs*, vol. 43, no. 8, pp. 1173-1195, 2021. https://doi.org/10.1080/07352166.2020.1727295
 
-**[11]** R. Ross, V. Pillitteri, and others, "Security and Privacy Controls for Information Systems and Organizations -- NIST Special Publication 800-53 Revision 5," National Institute of Standards and Technology, Sep. 2020. https://doi.org/10.6028/NIST.SP.800-53r5
+**[11]** D. F. Norris, L. K. Mateczun, and R. F. Forno, *Cybersecurity and Local Government*. Hoboken, NJ: John Wiley & Sons, 2022.
 
-**[12]** M. Toussaint, S. Krima, and H. Panetto, "Industry 4.0 Data Security: A Cybersecurity Frameworks Review," *Journal of Industrial Information Integration*, vol. 39, p. 100604, Mar. 2024. https://doi.org/10.1016/j.jii.2024.100604
+**[12]** B. Preis and L. Susskind, "Municipal Cybersecurity: More Work Needs to be Done," *Urban Affairs Review*, vol. 58, no. 2, pp. 614-629, 2022. https://doi.org/10.1177/1078087420973760
 
-**[13]** J. Kim and S. Lee, "Cybersecurity Readiness Assessment in Municipal Governments," *Journal of Cybersecurity*, 2024.
+**[13]** D. Rodriguez, I. Yang, J. M. Del Alamo, and N. Sadeh, "Large Language Models: A New Approach for Privacy Policy Analysis at Scale," *Computing*, vol. 106, no. 12, pp. 3879-3903, 2024. https://doi.org/10.1007/s00607-024-01331-9
 
-**[14]** Y. Chen and A. Kumar, "Large Language Models for Policy Analysis," *Information Processing and Management*, 2025.
+**[14]** R. Ross et al., "NIST Special Publication 800-53 Revision 5: Security and Privacy Controls for Information Systems and Organizations," NIST, 2020. https://doi.org/10.6028/NIST.SP.800-53r5
+
+**[15]** S. Savas and S. Karatas, "Cyber Governance Studies in Ensuring Cybersecurity: An Overview of Cybersecurity Governance," *International Cybersecurity Law Review*, vol. 3, no. 1, pp. 7-34, 2022.
+
+**[16]** M. Toussaint, S. Krima, and H. Panetto, "Industry 4.0 Data Security: A Cybersecurity Frameworks Review," *Journal of Industrial Information Integration*, vol. 39, p. 100604, 2024.
 
 ---
 

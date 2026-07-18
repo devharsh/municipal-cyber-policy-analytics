@@ -44,9 +44,9 @@ preferred-citation:
     - family-names: "Huggins"
       given-names: "Titorian"
       affiliation: "Bowie State University"
-  title: "Benchmarking Municipal Cybersecurity Readiness Through Automated Policy Analytics: Evidence from Maryland Local Governments"
-  collection-title: "Proceedings of the CCSC Eastern Conference 2027"
-  year: 2027
+  title: "Benchmarking State and Local Cybersecurity Readiness Through Automated Policy Analytics: Evidence from Maryland Local Governments"
+  collection-title: "Journal of Computing Sciences in Colleges, 42(3), CCSC Eastern Conference 2026"
+  year: 2026
   publisher:
-    name: "ACM"
+    name: "Consortium for Computing Sciences in Colleges"
   url: "https://github.com/devharsh/municipal-cyber-policy-analytics"

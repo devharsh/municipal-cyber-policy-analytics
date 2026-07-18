@@ -207,3 +207,38 @@ To apply this pipeline to a different state or jurisdiction:
 5. Run `python code/ai/ai_classify.py` and `python code/ai/compare_methods.py`.
 
 The pipeline is jurisdiction-agnostic. No Maryland-specific logic exists in the code; all Maryland-specific content is in `policies/` and the AI score annotations in `ai_classify.py`.
+
+---
+
+## Camera-Ready Additions (2026)
+
+The following methodology components were added for the final CCSC Eastern 2026 version of the paper.
+
+### Input Truncation Rationale
+
+AI classification uses the first 12,000 characters of each document (roughly 3,000 tokens, or 4-6 pages). Policy documents front-load purpose, scope, authority, and requirement statements, so the prefix captures a document's primary intent; a fixed cut also gives every document the same evidence budget and bounds inference cost. The stability check shows the truncation cost appears only as one-point score variance on long manuals; retrieval-augmented full-document processing is listed as future work.
+
+### Keyword-List Ablation (V1-V3)
+
+Three variants of the Method 1 keyword lists isolate the effect of list specification (`code/manual/keyword_ablation.py`, `code/manual/statistical_tests.py`):
+
+| Variant | Definition |
+|---|---|
+| V0 | Original 4-5 term lists per function (bare *training* included) |
+| V1 | V0 minus the single ambiguous term *training* |
+| V2 | *training* kept only with a security qualifier (e.g., *security awareness training*) |
+| V3 | V1 plus *multi-factor*, *least privilege*, *network segmentation*, *patch management*, *hardening*, *SIEM*, *threat intelligence*, and similar (engineered post hoc; approximates an upper bound) |
+
+Detection rule and thresholds are unchanged across variants. Outputs: `results/keyword_ablation.csv`, `results/keyword_scores_V*.csv`.
+
+### Statistical Evaluation
+
+Method differences are tested with McNemar's exact (binomial) test on paired document-level decisions, and percentile bootstrap 95% confidence intervals (10,000 resamples over documents) are computed for precision, recall, F1, and the F1 difference. Because the 0-2 ratings are ordinal, per-function agreement is reported as Pearson r, Spearman rho, and quadratic-weighted Cohen's kappa. Outputs: `results/statistical_tests.txt`.
+
+### Reproducibility and Model Configuration
+
+All primary classifications: model identifier `claude-sonnet-4-6`, single pass per document, the verbatim auditor prompt (no system prompt beyond it), no per-document tuning, provider-default sampling (no temperature or seed control). Run-to-run stability was measured by re-running the identical prompt three independent times on a stratified 13-document subsample (all 7 ground-truth policies plus 6 non-policy documents). Outputs: `results/llm_stability_run[ABC].csv`, `results/llm_stability_summary.csv`.
+
+### Ground-Truth Label Validation
+
+A second rater independently relabeled all 51 documents using the written primary-purpose rule (`ground_truth_labeling_sheet.xlsx`): raw agreement 92.2% (47/51), Cohen's kappa = 0.73 (substantial). All 7 positives were confirmed; the 4 disagreements are boundary documents (two advisory reports, a data management plan, a workforce disaster-recovery policy), and original labels were retained under the rule. Output: `results/interrater_agreement.txt`.

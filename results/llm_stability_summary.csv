@@ -1,0 +1,9 @@
+Metric,Value
+Documents in subsample,13
+Ground-truth positives in subsample,7
+Independent runs,3
+Document-function cells,78
+Cells identical across all 3 runs,55 (70.5%)
+Cells within one point across runs,76 (97.4%)
+Mean pairwise cell agreement,79.5%
+Document-level relevance flag agreement,13/13 (100%)

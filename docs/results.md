@@ -180,3 +180,50 @@ Method 1 flags meeting agendas, business plans, and financial statements. Method
 | `results/detection_metrics.csv` | Precision, recall, F1, accuracy for each method |
 | `results/method_comparison_by_category.csv` | Per-function means, std devs, Pearson r, p-values |
 | `results/false_positive_analysis.csv` | FP counts per function per method |
+
+---
+
+## Camera-Ready Results (2026)
+
+Final results added for the CCSC Eastern 2026 paper. All values computed by `code/manual/keyword_ablation.py` and `code/manual/statistical_tests.py`.
+
+### Statistical Significance of the Method Comparison
+
+The AI method corrects 18 keyword errors and introduces 1 (McNemar exact test, p = 0.000076). Bootstrap 95% confidence intervals (10,000 resamples): keyword F1 [0.133, 0.552], AI F1 [0.444, 0.929], F1 difference [0.200, 0.588].
+
+### Per-Function Agreement (Ordinal Statistics)
+
+| Function | r | rho | kappa_w |
+|---|---|---|---|
+| Govern | 0.789 | 0.667 | 0.779 |
+| Identify | 0.681 | 0.639 | 0.680 |
+| Protect | 0.151 | 0.144 | 0.076 |
+| Detect | 0.533 | 0.460 | 0.435 |
+| Respond | 0.542 | 0.498 | 0.541 |
+| Recover | 0.507 | 0.471 | 0.415 |
+
+All significant at p < 0.001 except Protect (p > 0.29).
+
+### Keyword-List Ablation
+
+| Variant | TP | FP | FN | TN | P | R | F1 | Acc. |
+|---|---|---|---|---|---|---|---|---|
+| V0 original | 6 | 21 | 1 | 23 | 0.222 | 0.857 | 0.353 | 56.9% |
+| V1 no 'training' | 6 | 8 | 1 | 36 | 0.429 | 0.857 | 0.571 | 82.4% |
+| V2 qualified | 6 | 8 | 1 | 36 | 0.429 | 0.857 | 0.571 | 82.4% |
+| V3 expanded | 7 | 8 | 0 | 36 | 0.467 | 1.000 | 0.636 | 84.3% |
+| AI-assisted | 7 | 5 | 0 | 39 | 0.583 | 1.000 | 0.737 | 90.2% |
+
+Protect keyword-AI correlation becomes significant under refinement (V1 r = 0.736, V2 r = 0.666, V3 r = 0.708; all p < 0.001). AI vs V3 is not significant at n = 51 (McNemar p = 0.45); V3 was engineered post hoc and approximates an upper bound.
+
+### AI False Positives
+
+Five non-policy documents flagged: UMGC Local Gov Cybersecurity Report (advisory; all six functions, GV = 2), MD Cybersecurity Council Report (advisory; GV = 2), MD Procurement Manual (PR = 1), MD iMap Data Management Plan (GV/ID/PR = 1), QUEST Disaster Recovery Worker Grant (RC = 1; economic, not IT, recovery). Four of the five coincide with the second rater's label disagreements. A stricter score-2 threshold keeps all 7 policies and 2 false positives (precision 0.778, F1 = 0.875).
+
+### Classification Stability (Three Independent Runs, 13 Documents)
+
+Document-level relevance decisions identical in all runs (13/13); 70.5% of 78 function cells identical across all three runs; 97.4% within one point (mean pairwise agreement 79.5%); no non-cyber document scored above 0 in any run. Variance concentrates on the partial-vs-present boundary of long, truncated manuals.
+
+### Ground-Truth Validation
+
+Second-rater relabeling of all 51 documents: raw agreement 92.2% (47/51), Cohen's kappa = 0.73. All 7 positives confirmed; 4 boundary-document disagreements (see `results/interrater_agreement.txt`).

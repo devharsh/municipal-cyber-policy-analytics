@@ -1,0 +1,4 @@
+Variant,TP,FP,FN,TN,Precision,Recall,F1,Accuracy,Protect_FP_docs,Protect_mean_raw,Protect_r_vs_AI,Protect_p
+V0_original,6,21,1,23,0.222,0.857,0.353,0.569,21,18.0,0.151,0.2906
+V1_drop_training,6,8,1,36,0.429,0.857,0.571,0.824,1,6.65,0.736,0.0
+V2_qualified_training,6,8,1,36,0.429,0.857,0.571,0.824,2,7.75,0.666,0.0
